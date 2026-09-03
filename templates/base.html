@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Metis — Username Intelligence{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body
+    class="bg-black text-white font-mono min-h-screen flex flex-col bg-[linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(71,85,105,.1) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(71,85,105,.1) 40px)]">
+    <div class="m_2ce0de02 opacity-90"
+        style="z-index:-1; height:100%; background-repeat:repeat-y; background-image:url('/static/pattern.png'); position:fixed; width:100%; top:0; left:0;"></div>
+
+    <!-- Header -->
+    <header class="bg-[#1a1b26]/50 backdrop-blur-md border-b border-[#24283b] sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 md:px-6">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <a href="/" class="flex items-center space-x-3 hover:opacity-90 transition-opacity">
+                        <i class="fas fa-fingerprint text-2xl text-purple-400"></i>
+                        <span class="text-xl font-bold tracking-tight text-white">Metis</span>
+                    </a>
+                    <!-- <span class="text-xs uppercase px-2 py-0.5 rounded bg-purple-900/40 text-purple-300 border border-purple-800/60 font-semibold hidden sm:inline-block">OSINT</span> -->
+                </div>
+                <div class="flex items-center space-x-4 text-sm text-gray-400">
+                    <a href="/docs" target="_blank" class="hover:text-purple-400 transition-colors flex items-center space-x-1">
+                        <i class="fas fa-book text-xs"></i>
+                        <span class="hidden md:inline">API Docs</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+
+    {% block scripts %}{% endblock %}
+    {% block extra_scripts %}{% endblock %}
+</body>
+
+</html>

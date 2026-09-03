@@ -1,0 +1,173 @@
+.m_2ce0de02 {
+  background-size: cover;
+  background-position: 50%;
+  display: block;
+  width: 100%;
+  border: 0;
+  text-decoration: none;
+  border-radius: var(--bi-radius, 0);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Added markdown preview styles */
+/* Markdown Preview Styles */
+.markdown-preview {
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+.markdown-preview h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #a78bfa;
+  border-bottom: 2px solid #4c1d95;
+  padding-bottom: 0.5rem;
+}
+
+.markdown-preview h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #c4b5fd;
+}
+
+.markdown-preview h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ddd6fe;
+}
+
+.markdown-preview p {
+  margin-bottom: 1rem;
+}
+
+.markdown-preview ul,
+.markdown-preview ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.markdown-preview li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-preview code {
+  background-color: #1f2937;
+  color: #a78bfa;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+}
+
+.markdown-preview pre {
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.markdown-preview pre code {
+  background-color: transparent;
+  padding: 0;
+  color: #e5e7eb;
+}
+
+.markdown-preview blockquote {
+  border-left: 4px solid #a78bfa;
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.markdown-preview a {
+  color: #a78bfa;
+  text-decoration: underline;
+}
+
+.markdown-preview a:hover {
+  color: #c4b5fd;
+}
+
+.markdown-preview strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+.markdown-preview em {
+  font-style: italic;
+  color: #d1d5db;
+}
+
+.markdown-preview hr {
+  border: none;
+  border-top: 1px solid #374151;
+  margin: 1.5rem 0;
+}
+
+.markdown-preview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  border: 1px solid #374151;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.markdown-preview th {
+  background-color: #1f2937;
+  font-weight: 600;
+  color: #a78bfa;
+}
+
+.markdown-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
